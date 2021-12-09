@@ -1,0 +1,835 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    scroll-behavior: smooth;
+  }
+
+body{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: #4e4e4e;
+    background-image: url(/images/artboard03.png);
+    background-repeat: no-repeat;
+    background-size: cover;      
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #29272965;
+    border-radius: 7px;
+    border-top: 1px solid rgba(179, 177, 177, 0.204);
+    border-left: 1px solid rgba(179, 177, 177, 0.204);
+    box-shadow: 7px 7px 10px 0px rgb(8, 8, 8);
+    height: 30px;
+    margin-top: 15px; 
+}
+    
+.redes{    
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+    border-radius: 7px;        
+}
+
+.menuredes{
+   font-size: 14px;  
+   color: rgb(133, 132, 132);
+   margin-top: 5px;   
+   width: 7%;        
+}
+
+.menuredes .spanish img{
+    opacity: 0.5;
+    padding-top: 3px;
+    height: 18px;
+    transition: all 0.5s ease-out;    
+}
+
+.menuredes .spanish img:hover{
+    opacity: 1;
+}   
+
+.menuredes .english img{
+    opacity: 0.5;
+    padding-top: 3px;
+    height: 18px; 
+    transition: all 0.5s ease-out;     
+}
+
+.menuredes .english img:hover{
+    opacity: 1;
+}
+
+.fab{
+text-decoration: none;
+color: rgb(151, 151, 151);
+transition: all 0.5s ease-out;
+}
+
+.fab:hover{
+    color: white;
+}
+
+/* -------------{}- Menu Flotante ------------------ */
+nav{ 
+    background-color: #2d142c52;   
+    position: sticky;
+    top: 20px;
+    border-radius: 7px;
+    z-index: 2;
+}
+
+nav ul{
+    backdrop-filter: blur(5px);
+    border-radius: 7px;
+    border-top: 1px solid rgba(179, 177, 177, 0.555);
+    border-left: 1px solid rgba(179, 177, 177, 0.555);
+    box-shadow: 7px 7px 10px 0px rgb(8, 8, 8);
+    padding: 7px;
+    margin-bottom:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li{
+    width: 18%;
+}
+
+nav ul li a{
+    color: rgb(151, 151, 151);
+    border-radius: 7px;
+    transition: all 0.5s ease-out;
+    text-decoration: none;
+    text-align: center;
+    display: block;  
+                  
+}
+
+nav ul li a:hover{    
+color: white;
+}
+
+/* Fin------------ Menu Flotante ------------------ */
+    
+/* -------------- Footer        ----------------- */
+
+footer{
+    background-color: #29272965;
+    border-radius: 7px;
+    border-top: 1px solid rgba(179, 177, 177, 0.204);
+    border-left: 1px solid rgba(179, 177, 177, 0.204);
+    box-shadow: 6px 6px 10px 0px rgb(8, 8, 8);
+    padding: 2px 0;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    margin-bottom: 1000px;
+}
+
+/* Fin----------- Footer-------------------------- */
+
+
+/* Contenido----------------------------------------------------------- */
+
+/* Foto Principal ------{}------------------------------------*/
+
+.fotoprincipal{    
+    height: 480px;
+    background-image: url(/images/muchacha04.jpg);  
+    border-radius: 10px;
+    color:rgb(187, 187, 187);      
+}
+
+.fotoprincipal h1{
+    padding: 15px 0 0 15px;
+}
+
+.fotoprincipal img{    
+    max-width: 100%;
+    border-radius: 10px;  
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 10px;
+    margin-bottom: 80px; 
+}
+
+.gradientefotoprincipal{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;   
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0) 100%);
+}
+
+.espacio{
+    background-color: rgba(255, 0, 0, 0);
+    height: 40px;
+    /* display: none;*/
+} 
+
+/* Sobre Mi------{}---------------------------*/
+
+.sobre{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #510a3259;  */
+    
+    background-image: linear-gradient(to bottom right,
+    #510a4259 20%, #690d4159 30%, #353535 70%, #353535 100%);
+    background-size: 150% 150%;
+    animation: movgradient 7s linear infinite alternate;
+
+    color: rgb(190, 190, 190);
+    border-radius: 7px;
+    border-top: 1px solid rgba(179, 177, 177, 0.2);
+    border-left: 1px solid rgba(179, 177, 177, 0.2);
+    box-shadow: 7px 7px 10px 0px rgb(8, 8, 8);
+    padding: 15px;
+    height: 600px;
+    margin-bottom: 150px; 
+}
+
+.sobre img{
+    border-radius: 7px;
+}
+
+br{
+    line-height: 5%;
+}
+
+/* Proyectos------{}---------------------------*/
+
+.proy{
+    background-color: #510a4259;
+    color: rgb(190, 190, 190);
+    border-radius: 7px;
+    border-top: 1px solid rgba(179, 177, 177, 0.204);
+    border-left: 1px solid rgba(179, 177, 177, 0.204);
+    box-shadow: 7px 7px 10px 0px rgb(8, 8, 8);
+    padding: 15px;
+    margin-bottom: 100px;
+}
+
+.ilustracion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    /* background-color: rgba(255, 255, 255, 0.103); */
+    color: rgb(190, 190, 190);
+    /* border-radius: 7px; */
+    /* border-top: 1px solid rgba(179, 177, 177, 0.555);
+    border-left: 1px solid rgba(179, 177, 177, 0.555); */
+    /* padding: 15px; */
+    height: 1100px;    
+}
+
+.caja1 {
+    background-image: url("/images/proyectos/trent.jpg");
+    width: 430px;
+    height: 430px;
+    background-size: cover;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.caja2{
+    background-image: url(/images/proyectos/Robert.jpg);
+    width: 430px;
+    height: 430px;
+    background-size: cover;
+    border-radius: 7px;
+    text-align: center;    
+}
+
+.caja3{
+    background-image: url(/images/proyectos/manos.jpg);
+    width: 430px;
+    height: 430px;
+    background-size: cover;
+    border-radius: 7px;
+    text-align: center;    
+}
+
+.caja4{
+    background-image: url(/images/proyectos/inktober.jpg);
+    width: 430px;
+    height: 430px;
+    background-size: cover;
+    border-radius: 7px;
+    text-align: center;    
+}
+
+.gradientecaja{  
+    width: 430px;
+    height: 430px;   
+   background-color: rgba(255, 255, 255, 0.103);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%); 
+    color: rgb(190, 190, 190);
+    border-radius: 7px;
+}
+   
+    
+/* Fin Proyectos------{}---------------------------*/
+
+/* Publicaciones------{}---------------------------*/
+
+.public{
+    background-color: #6b0e5759;
+    color: rgb(190, 190, 190);    
+    border-radius: 7px;
+    border-top: 1px solid rgba(179, 177, 177, 0.204);
+    border-left: 1px solid rgba(179, 177, 177, 0.204);
+    padding: 15px;
+    margin-bottom: 100px;
+    box-shadow: 7px 7px 10px 0px rgb(8, 8, 8);
+}
+
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    color: rgb(190, 190, 190);
+    height: 1100px;   
+}
+
+.anchovideo{
+    width: 430px;
+    height: 430px;   
+}
+
+.caja21 {
+    border-radius: 7px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.caja22{
+    background-image: url(/images/publicaciones/sanmartin.webp);
+    width: 430px;
+    height: 430px;
+    background-size: cover;
+    border-radius: 7px;
+    text-align: center;    
+}
+
+.caja23{
+    border-radius: 7px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+       
+}
+
+.caja24{
+    background-image: url(/images/publicaciones/diadelingeniero.jpg);
+    width: 430px;
+    height: 430px;
+    background-size: cover;
+    border-radius: 7px;
+    text-align: center;    
+}    
+   
+/* Fin Publicaciones------{}---------------------------*/
+
+
+    
+/* Conta cto------{}---------------------------*/
+  
+.formulario{
+    background-color: #68636865;
+    border-radius: 7px;
+    color: rgb(190, 190, 190);
+    padding: 15px;
+    margin-bottom: 100px;
+    border-top: 1px solid rgba(179, 177, 177, 0.204);
+    border-left: 1px solid rgba(179, 177, 177, 0.204);
+    box-shadow: 7px 7px 10px 0px rgb(8, 8, 8);
+    text-align: center;
+    
+}
+
+.formulario label{
+    width: 90%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.formulario input{
+    width: 90%;
+border-radius: 5px;
+background-color: #68636865;
+color: rgb(190, 190, 190);
+}    
+    
+.formulario textarea{
+    resize: none;
+    height: 200px;
+    width: 90%;
+border-radius: 5px;
+background-color: #68636865;
+color: rgb(190, 190, 190);
+} 
+
+.formulario input[type="submit"]{
+    width: auto;
+    background-color: rgb(65, 65, 65);
+    box-shadow: 3px 3px 10px 2px rgb(36, 36, 36);     
+}
+
+.socialmedia{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    border-radius: 7px;
+    margin-bottom: 100px;   
+}
+
+.media{
+    font-size: 70px;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@keyframes movgradient {
+    from { background-position: 0 0; }
+    to{ background-position: 100% 100%; }
+}
+
+/* Responsive <<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>--------------------------------*/
+
+@media screen and (max-width: 960px) {
+    .holder {
+        max-width: 800px;
+    }
+
+    .fotoprincipal {
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .fotoprincipal h1 {
+        padding: 15px 0 0 15px;
+        /* font-size: 1rem; */
+    }
+
+    .ilustracion {
+        justify-content: space-evenly;
+    }
+
+    .caja1,
+    .caja2,
+    .caja3,
+    .caja4 {
+        width: 360px;
+        height: 360px;
+    }
+
+    .gradientecaja {
+        width: 360px;
+        height: 360px;
+
+    }
+
+    .posts {
+        justify-content: space-evenly;
+    }
+
+    .anchovideo {
+        width: 360px;
+        height: 360px;
+    }
+
+    .caja22,
+    .caja24 {
+        width: 360px;
+        height: 360px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .holder {
+        max-width: 680px;
+    }
+    .fotoprincipal {
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .fotoprincipal h1 {
+        padding: 15px 0 0 15px;
+        /* font-size: 1rem; */
+    }
+
+    .ilustracion {
+        justify-content: space-evenly;
+    }
+
+    .caja1,
+    .caja2,
+    .caja3,
+    .caja4 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .gradientecaja {
+        width: 300px;
+        height: 300px;
+    }
+
+    .posts {
+        justify-content: space-evenly;
+    }
+
+    .anchovideo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .caja22,
+    .caja24 {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
+@media screen and (max-width: 679px) {
+    .holder {
+        max-width: 401px;
+    }
+    nav{
+    top: 10px;    
+}
+nav ul {
+    height: 200px;
+    width: 45%;
+    padding: 1px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    float: right;  
+}
+
+nav ul li a{
+    text-align: right;  
+}
+    .redes{    
+        justify-content: space-around;       
+    }
+        h2{
+            font-size: 1.3rem;
+        }
+        .fotoprincipal h1{
+            padding: 20px 0 0 20px;
+            font-size: 1.3rem;
+        }
+        .fotoprincipal {
+             max-width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+           
+        }
+      
+        /*  .espacio{
+            background-color: rgba(255, 0, 0, 0);
+            height: 40px;
+            
+        }  */
+
+        nav ul {
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    
+
+        nav ul li {
+            padding: 5px;
+            width: 40%;
+            /* text-align: center; */
+        }
+
+        .sobre {
+            height: 900px;
+            max-width: 100%;
+            background-position: center;
+        }
+
+        .ilustracion {
+
+            height: 2000px;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+
+        .caja1,
+        .caja2,
+        .caja3,
+        .caja4 {
+            width: 340px;
+            height: 340px;
+        }
+
+        .gradientecaja {
+            width: 340px;
+            height: 340px;
+        }
+
+        .posts {
+            height: 2000px;
+            flex-direction: column;
+            /* align-content: center; */
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .anchovideo {
+            width: 340px;
+            height: 340px;
+        }
+
+        .caja22,
+        .caja24 {
+            width: 340px;
+            height: 340px;
+        }
+
+    }
+
+
+    
+@media screen and (max-width: 400px) {
+    .holder {
+        max-width: 320px;
+    }
+
+    nav{
+        top: 10px;    
+    }
+    nav ul {
+        height: 200px;
+        width: 45%;
+        padding: 1px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        float: right;  
+    }
+    nav ul li{
+        width: 15%;
+    }
+    nav ul li a{
+        text-align: right; 
+        font-size: 0.8rem; 
+    }
+
+    .redes{    
+        justify-content: space-around;       
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .fotoprincipal h1 {
+        padding: 10px 0 0 10px;
+        font-size: 1.2rem;
+    }
+
+    .fotoprincipal {
+        max-width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /*  .espacio{
+        background-color: rgba(255, 0, 0, 0);
+        height: 40px;       
+    }  */
+
+    nav ul {
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 5px;
+        width: 40%;
+        /* text-align: center; */
+    }
+
+    .sobre {
+        height: 900px;
+        max-width: 100%;
+        background-position: center;
+    }
+
+    .ilustracion {
+        height: 2000px;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    .caja1,
+    .caja2,
+    .caja3,
+    .caja4 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .gradientecaja {
+        width: 300px;
+        height: 300px;
+    }
+
+    .posts {
+        height: 2000px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .anchovideo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .caja22,
+    .caja24 {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+
+@media screen and (max-width: 319px) {
+    .holder{
+        max-width: 250px;
+    }
+
+    nav{
+        top: 10px;    
+    }
+    nav ul {
+        height: 200px;
+        width: 45%;
+        padding: 1px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        float: right;  
+    }
+    nav ul li{
+        width: 15%;
+    }
+    nav ul li a{
+        text-align: right; 
+        font-size: 0.7rem; 
+    }
+
+    .redes{    
+        justify-content: space-around;       
+    }
+        h2{
+            font-size: .8rem;
+        }
+        .fotoprincipal h1{
+            padding: 30px 0 0 30px;
+            font-size: .9rem;
+        }    
+        
+        .sobre{
+           
+            height: 1150px;
+            
+        }
+        .fotoprincipal {
+            max-width: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        .ilustracion {
+            height: 2000px;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+
+
+        .caja1,
+        .caja2,
+        .caja3,
+        .caja4 {
+            width: 250px;
+            height: 250px;
+        }
+    
+        .gradientecaja {
+            width: 250px;
+            height: 250px;
+    
+        }
+
+        .posts {
+            height: 1800px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+    
+        }
+    
+        .anchovideo {
+            width: 250px;
+            height: 250px;
+        }
+    
+        .caja22,
+        .caja24 {
+            width: 250px;
+            height: 250px;
+        }
+    
+    
+    
+}
+/*{}*/
+/* [] */
+
+/* backdrop-filter: blur(15px); */
