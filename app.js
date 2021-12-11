@@ -4,8 +4,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+require('dotenv').config();
+
+var indexRouter = require('./routes/index');//<<<<<<<<<<<<<<<<<<
+//var usersRouter = require('./routes/users');
+var proyectosRouter = require ('./routes/proyectos');
+var publicacionesRouter = require ('./routes/publicaciones');
+var contactoRouter = require ('./routes/contacto');
 
 var app = express();
 
@@ -20,7 +25,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+//app.use('/users', usersRouter); //<<<<<<<<<<<<<<<<<<
+app.use('/proyectos', proyectosRouter);
+app.use('/publicaciones', publicacionesRouter);
+app.use('/contacto', contactoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

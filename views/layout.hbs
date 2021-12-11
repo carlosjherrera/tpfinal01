@@ -68,11 +68,17 @@
     <!--    Menu Flotante    -->
     <nav class="holder">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobremi">Sobre Mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#publicaciones">Publicaciones</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+             <!-- <li><a href="#sobremi">Sobre Mí</a></li> -->
+            <!-- <li><a href="#proyectos">Proyectos</a></li>-->
+            <!--<li><a href="#publicaciones">Publicaciones</a></li>-->
+            <!-- <li><a href="#contacto">Contacto</a></li>-->
+            <li><a href="/" class="{{#if isHome}}activo{{/if}}">Home</a></li>
+            <li><a href="/proyectos" class="{{#if isProyectos}}activo{{/if}}">Proyectos</a></li>
+            <li><a href="/publicaciones" class="{{#if isPublicaciones}}activo{{/if}}">Publicaciones</a></li>
+            <li><a href="/contacto" class="{{#if isContacto}}activo{{/if}}">Contacto</a></li>
+
+
+
         </ul>
     </nav>
     <!--    Fin Menu Flotante    -->
@@ -80,6 +86,27 @@
 
     {{{body}}}
 
+ <div class="holder socialmedia">
+        <div class="media">
+            <a href="https://www.instagram.com/carlos____herrera___/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <div class="media">
+            <a href="https://twitter.com/cherreranews" target="_blank">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </div>
+
+        <div class="media">
+            <a href="https://www.linkedin.com/in/carlos-herrera-35691b98/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+
+    </div>
 
     <footer class="holder footer">
         <p>SITIO DISEÑADO POR CARLOS HERRERA - TODOS LOS DERECHOS RESERVADOS 2021</p>
