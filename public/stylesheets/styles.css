@@ -12,8 +12,9 @@ body{
     font-size: 15px;
     line-height: 25px;
     /* background-color: rgb(0, 0, 0); */
-    background-color: #4e4e4e;
-    background-image: url(/images/artboard03.png);
+    background-color: #333333;
+ 
+    /* background-image: url(/images/artboard03.png); */
     background-repeat: no-repeat;
     background-size: cover;      
 }
@@ -24,7 +25,7 @@ body{
 }
 
 header{
-    background-color: #29272965;
+    background-color: #222222;
     border-radius: 7px;
     border-top: 1px solid rgba(179, 177, 177, 0.204);
     border-left: 1px solid rgba(179, 177, 177, 0.204);
@@ -81,7 +82,7 @@ transition: all 0.5s ease-out;
 
 /* -------------{}- Menu Flotante ------------------ */
 nav{ 
-    background-color: #2d142c52;   
+    background-color: #22222279;   
     position: sticky;
     top: 20px;
     border-radius: 7px;
@@ -128,7 +129,7 @@ color: white;
 /* -------------- Footer        ----------------- */
 
 footer{
-    background-color: #29272965;
+    background-color: #222222;
     border-radius: 7px;
     border-top: 1px solid rgba(179, 177, 177, 0.204);
     border-left: 1px solid rgba(179, 177, 177, 0.204);
@@ -186,12 +187,12 @@ footer{
 .sobre{
     display: flex;
     flex-wrap: wrap;
-    /* background-color: #510a3259;  */
+    background-color: #222222; 
     
-    background-image: linear-gradient(to bottom right,
+   /*  background-image: linear-gradient(to bottom right,
     #510a4259 20%, #690d4159 30%, #353535 70%, #353535 100%);
     background-size: 150% 150%;
-    animation: movgradient 7s linear infinite alternate;
+    animation: movgradient 7s linear infinite alternate; */
 
     color: rgb(190, 190, 190);
     border-radius: 7px;
@@ -214,7 +215,7 @@ br{
 /* Proyectos------{}---------------------------*/
 
 .proy{
-    background-color: #510a4259;
+    background-color: #222222;
     color: rgb(190, 190, 190);
     border-radius: 7px;
     border-top: 1px solid rgba(179, 177, 177, 0.204);
@@ -277,8 +278,8 @@ br{
 .gradientecaja{  
     width: 430px;
     height: 430px;   
-   background-color: rgba(255, 255, 255, 0.103);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%); 
+   /* background-color: rgba(255, 255, 255, 0.103); */
+   /*  background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%);  */
     color: rgb(190, 190, 190);
     border-radius: 7px;
 }
@@ -289,7 +290,7 @@ br{
 /* Publicaciones------{}---------------------------*/
 
 .public{
-    background-color: #6b0e5759;
+    background-color: #222222;
     color: rgb(190, 190, 190);    
     border-radius: 7px;
     border-top: 1px solid rgba(179, 177, 177, 0.204);
@@ -353,7 +354,7 @@ br{
 /* Conta cto------{}---------------------------*/
   
 .formulario{
-    background-color: #68636865;
+    background-color: #222222;
     border-radius: 7px;
     color: rgb(190, 190, 190);
     padding: 15px;

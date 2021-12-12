@@ -10,7 +10,9 @@ var indexRouter = require('./routes/index');//<<<<<<<<<<<<<<<<<<
 //var usersRouter = require('./routes/users');
 var proyectosRouter = require ('./routes/proyectos');
 var publicacionesRouter = require ('./routes/publicaciones');
+var novedadesRouter = require ('./routes/novedades');
 var contactoRouter = require ('./routes/contacto');
+var loginRouter = require('./routes/admin/login');
 
 var app = express();
 
@@ -28,7 +30,9 @@ app.use('/', indexRouter);
 //app.use('/users', usersRouter); //<<<<<<<<<<<<<<<<<<
 app.use('/proyectos', proyectosRouter);
 app.use('/publicaciones', publicacionesRouter);
+app.use('/novedades', novedadesRouter);
 app.use('/contacto', contactoRouter);
+app.use('/admin/login', loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
