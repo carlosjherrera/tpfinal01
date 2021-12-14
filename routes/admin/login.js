@@ -1,5 +1,5 @@
 var express = require('express');
-const session = require('express-session');
+
 var router = express.Router();
 var usuariosModel = require('./../../models/usuariosModels');
 
@@ -8,6 +8,13 @@ router.get('/', function (req, res, next) {
     layout: 'admin/layout'
   }) // admin.hbs
 });
+
+router.get('/logout',function(req,res,next){
+  req.session.destroy();
+  res.render('admin/login',{
+      layout:'admin/layout'
+  })
+})
 
 router.post('/', async function (req, res, next) {
   try {
