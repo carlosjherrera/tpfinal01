@@ -7,4 +7,5 @@ router.get('/', function (req, res, next) {
     }); // proyectos.hbs
 });
 
+
 module.exports = router;
