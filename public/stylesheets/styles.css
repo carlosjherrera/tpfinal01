@@ -243,7 +243,8 @@ br{
 .ilustracion{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 100px;
     /* background-color: rgba(255, 255, 255, 0.103); */
     color: rgb(190, 190, 190);
@@ -251,7 +252,7 @@ br{
     /* border-top: 1px solid rgba(179, 177, 177, 0.555);
     border-left: 1px solid rgba(179, 177, 177, 0.555); */
     /* padding: 15px; */
-    height: 1100px;    
+    height: 2600px;     
 }
 
 
@@ -270,7 +271,8 @@ br{
 
 .content{  
     backdrop-filter: blur(5px);
-    padding: 20px;
+    padding: 5px; 
+    width: 400px;
     text-align: center;
     transform: translateY(100px);
     opacity: 0;
@@ -300,8 +302,18 @@ br{
     width: 430px;
     height: 430px;
     background-size: cover;
-    border-radius: 7px;
-    text-align: center;    
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    text-align: center; 
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+
+}
+
+.caja2:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .caja3{
@@ -309,8 +321,17 @@ br{
     width: 430px;
     height: 430px;
     background-size: cover;
-    border-radius: 7px;
-    text-align: center;    
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    text-align: center; 
+    display: flex;
+    justify-content: center;   
+    align-items: center;  
+}
+
+.caja3:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .caja4{
@@ -318,18 +339,55 @@ br{
     width: 430px;
     height: 430px;
     background-size: cover;
-    border-radius: 7px;
-    text-align: center;    
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    text-align: center; 
+    display: flex;
+    justify-content: center;   
+    align-items: center;    
 }
 
-.gradientecaja{  
-    width: 430px;
-    height: 430px;   
-   /* background-color: rgba(255, 255, 255, 0.103); */
-   /*  background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%);  */
-    color: rgb(190, 190, 190);
-    border-radius: 7px;
+.caja4:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
 }
+
+.caja5{
+    background-image: url(/public/images/proyectos/mujer01.jpg);
+    width: 430px;
+    height: 430px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    text-align: center; 
+    display: flex;
+    justify-content: center;   
+    align-items: center;    
+}
+
+.caja5:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.caja6{
+    background-image: url(/public/images/proyectos/mujer02.jpg);
+    width: 430px;
+    height: 430px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    text-align: center; 
+    display: flex;
+    justify-content: center;   
+    align-items: center;    
+}
+
+.caja6:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
    
     
 /* Fin Proyectos------{}---------------------------*/
